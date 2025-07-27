@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mobile dental anesthesia services across Illinois. Safe, seamless sedation by a board-certified anesthesiologist." />
+  <meta property="og:title" content="Daydream Anesthetics" />
+  <meta property="og:description" content="Mobile anesthesia for dental offices – pediatric, adult, and special needs sedation by a board-certified anesthesiologist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.daydreamanesthetics.com" />
+  <meta property="og:image" content="/daydream-og.png" />
+  <title>Daydream Anesthetics | Mobile Dental Anesthesia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header, footer {
+      background: white;
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background: #1d4ed8;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #1e40af;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    .footer {
+      border-top: 1px solid #ccc;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <img src="logo.png" alt="Logo" width="50" height="50" />
+        <strong style="font-size: 1.5rem; color: #1d4ed8;">Daydream Anesthetics</strong>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#dentists">Dentists</a></li>
+        <li><a href="#patients">Patients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section style="text-align: center;">
+    <h1 style="font-size: 2.5rem; color: #1d4ed8;">Safe, Seamless Dental Anesthesia</h1>
+    <p style="max-width: 600px; margin: 1rem auto; color: #555;">
+      Mobile anesthesia services across Illinois — for dentists who care, and patients who deserve comfort.
+    </p>
+  </section>
+
+  <section id="about" class="card">
+    <h2>About Us</h2>
+    <p>Led by a board-certified anesthesiologist, we specialize in mobile dental anesthesia for children, adults, and patients with special needs.</p>
+  </section>
+
+  <section id="services" class="card">
+    <h2>Our Services</h2>
+    <p>We bring hospital-grade monitoring and anesthesia services to your dental office — from pre-op to recovery — with full emergency preparedness.</p>
+  </section>
+
+  <section id="dentists" class="card">
+    <h2>For Dentists</h2>
+    <p>Expand access and efficiency by partnering with us. We handle all anesthesia aspects, are DEA-compliant, and fully equipped to manage high-acuity cases.</p>
+  </section>
+
+  <section id="patients" class="card">
+    <h2>For Patients</h2>
+    <p>We provide personalized, comfortable sedation. From nervous children to medically complex adults, your safety and peace of mind come first.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xwkglzjy" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="practice" placeholder="Dental Practice (if applicable)" />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> Daydream Anesthetics PLLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
